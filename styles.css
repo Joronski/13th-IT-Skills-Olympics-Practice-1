@@ -1,0 +1,379 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Styling */
+.hero {
+	text-align: center;
+	padding: 100px 20px;
+	background-image: url("hero-bg-abstract.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hero-header-1 {
+	font-size: 3em;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.hero-description {
+	text-align: center;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+
+/* About Us Styling */
+.aboutUs {
+	padding: 100px 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+.about-container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.about-section {
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+}
+
+.about-section .about-image {
+	width: 500px;
+	margin-right: 30px;
+	border-radius: 10px;
+	transition: box-shadow 0.3s ease;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .about-image:hover {
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.about-section h2 {
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.about-section p {
+	font-size: 1.2em;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+/* Gallery Portfolio Styling */
+.gallery-section {
+	background-image: url("counts-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 50px 20px;
+}
+
+.gallery-introductory-section {
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 30px;
+	background-color: #f5f5f5;
+	width: 80%;
+	max-width: 100rem;
+	margin: 30px auto;
+	border-radius: 20px;
+}
+
+.gallery-heading-1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+.gallery-description {
+	font-size: 1.2em;
+	line-height: 1.6;
+	color: #555; 
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 20px;
+}
+
+.image-container {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.image-container:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container:hover img {
+	transform: scale(1.05);
+}
+
+.image-container:focus-within {
+	outline: 4px solid #fff;
+	transform: translateY(-8px);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Conclusion Styling */
+.conclusion-section {
+	padding: 20px;
+	background-image: url("cta-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-top: 1px solid #ddd;
+}
+
+.contact-us-background {
+	background-color: #fff;
+	padding: 30px;
+	width: 80%;
+	max-width: 100rem;
+	margin: 30px auto;
+	border-radius: 20px;
+}
+
+.conclusion-header-1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2.5em;
+	color: #000;
+}
+
+.conclusion-desc {
+	text-align: center;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.contact-info-group {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	text-align: center;
+	width: 80%;
+	max-width: 100rem;
+	margin: 30px auto;
+	border-radius: 20px;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-info, .social-media, .visit-us, .team, .contact-form {
+	margin-bottom: 40px;
+}
+
+.contact-header-2, .social-heading, .visit-heading-2, .contact-header {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 1.8em;
+	color: #000;
+}
+
+/* Visit Us Styling */
+.visit-us {
+	background-color: #fff;
+	padding: 30px;
+	text-align: center;
+	width: 80%;
+	max-width: 100rem;
+	margin: 30px auto;
+	border-radius: 20px;
+}
+
+.visit-desc {
+	text-align: center;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.contact-info p {
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+/* Social Media Stylings */
+.social-media {
+	background-color: #fff;
+	padding: 30px;
+	text-align: center;
+	width: 80%;
+	max-width: 100rem;
+	margin: 30px auto;
+	border-radius: 20px;
+}
+
+.social-media a {
+	display: inline-block;
+	margin: 15px 15px;
+	font-size: 2em;
+	color: #000;
+	transition: color 0.2s;
+}
+
+.social-media a:hover {
+	color: #555;
+}
+
+/* Team Profile Stylings */
+.team {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+.team-member {
+	background-color: #fff;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.team-member img {
+	width: 250px;
+	height: 250px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+	text-align: center;
+	background-color: #fff;
+	padding: 30px;
+	width: 80%;
+	max-width: 25rem;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.contact-form label {
+	text-align: justify;
+	margin-bottom: 5px;
+}
+
+.contact-form textarea {
+	height: 150px;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+	display: block;
+	width: 80%;
+	max-width: 25rem;
+	margin: 0 auto 15px auto;
+}
+
+.contact-form input, .contact-form textarea {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-form button {
+	background-color: #000;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	transition: background-color 0.2s;
+	display: block;
+	margin: 0 auto;
+}
+
+.contact-form button:hover {
+	background-color: #555;
+	color: #fff;
+}
+
+/* Footer Styling */
+footer {
+	background-color: #212121;
+}
+
+footer h3 {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: #fff;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 850px) {
+	/* About Us Styling */
+	.about-section {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.about-section .about-image {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+	.about-section h2 {
+		margin-right: 0;
+	}
+	
+	.about-section p {
+		margin-right: 0;
+	}
+}
